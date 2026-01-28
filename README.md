@@ -7,7 +7,7 @@
  - Data Cleaning: จักการกับข้อมูลที่มี Missing Values เพื่อให้ได้ชุดข้อมูลที่พร้อมสําหรับการประมวลผล
  - Predictive Modeling: สร้าง Classification Model เพื่อนําไป Predict จากลักษณะของเห็ดว่ากินได้ หรือกินไม่ได้
 
-![Mushroom_Process](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+![Mushroom_Process](https://github.com/user-attachments/assets/1600b57f-d217-4f82-8efa-201fe88750fa)
 
 **รายละเอียดข้อมูล (Data Overview)**
 
@@ -29,11 +29,11 @@
 
  1. สํารวจข้อมูลที่เกิด Missing Value จากการสํารวจพบว่ามข้อมูลที่มี Missing Value เฉพาะใน Attribute stalk-root เท่านั้น
     
-![Mushroom_MissingValue](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+![Mushroom_MissingValue](https://github.com/user-attachments/assets/d939ef8c-2e69-429b-b361-6cf20af24fff)
 
  2. เลือกใช้ Operator "Filter Examples" โดยตั้งเงื่อนไขเป็น `is not missing` เพื่อตัดแถวที่มีค่าว่างออกจากการวิเคราะห์
     
-![Mushroom_FilterExample](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+![Mushroom_FilterExample](https://github.com/user-attachments/assets/0e9a7c15-e547-4cc5-9c6d-eb847437356f)
 
 > " เพราะข้อมูลเป็นประเภท Categorical การแทนค่าด้วยค่าเฉลี่ยไม่สามารถทําได้ จึงเลือกตัดข้อมูลแทน "
  - หลังจากทํา Data Cleaning แล้ว จะเหลือข้อมูลจํานวน 5,642 แถว และพร้อมที่จะนําไปสร้างโมเดลต่อไป
@@ -48,7 +48,7 @@
 	 - เนื่องจากชุดข้อมูลเห็ดเป็นตัวอักษรย่อทั้งหมด โมเดลนี้สามารถประมวลผลได้โดยตรงโดยไม่ต้องแปลงข้อมูลเป็นตัวเลข ซึ่งช่วยลดความเสี่ยงจากการคลาดเคลื่อนของข้อมูล
 	 - จากการทดสอบพบว่าโมเดลให้ค่า Performance แม่นยำถึง 100% สำหรับชุดข้อมูลนี้
     
-	 ![Mushroom_Performance](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+![Mushroom_Performance](https://github.com/user-attachments/assets/725ce56e-1a26-4bf0-b1e3-69bf54f81aac)
  
  - **การเปรียบเทียบกับโมลเดลอื่น**
 	 - **Logistic Regression / LDA:** ไม่ถูกเลือกเนื่องจากถูกออกแบบมาสำหรับข้อมูลตัวเลข และมีความซับซ้อนในการเตรียมข้อมูลมากกว่า
@@ -63,7 +63,7 @@
 	 - กลิ่น (Odor) เป็นตัวแปรที่สําคัญที่สุด โดยเห็นที่มีกลิ่น Almond หรือ Anise มีแนวโน้มที่จะกินได้ ส่วนเห็ดที่มีกลิ่นฉุนหรือเหม็นมักจะมีพิษ
 	 - สีของสปอร์ (Spore Print Color) เป็นอีกปัจจัยสําคัญที่ช่วยในการตัดสินใจ
 
-    ![Mushroom_Result](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+    ![Mushroom_Result](https://github.com/user-attachments/assets/c4ebc5f3-1c36-46b6-b228-5dc3d72eb369)
 
 **เครื่องมือที่ใช้:** RapidMiner
 

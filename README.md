@@ -30,7 +30,8 @@
  1. สํารวจข้อมูลที่เกิด Missing Value จากการสํารวจพบว่ามข้อมูลที่มี Missing Value เฉพาะใน Attribute stalk-root เท่านั้น
     
 ![Mushroom_MissingValue](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
- 3. เลือกใช้ Operator "Filter Examples" โดยตั้งเงื่อนไขเป็น `is not missing` เพื่อตัดแถวที่มีค่าว่างออกจากการวิเคราะห์
+
+ 2. เลือกใช้ Operator "Filter Examples" โดยตั้งเงื่อนไขเป็น `is not missing` เพื่อตัดแถวที่มีค่าว่างออกจากการวิเคราะห์
     
 ![Mushroom_FilterExample](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
 
@@ -46,6 +47,7 @@
 	 - Decision Tree ให้ผลลัพธ์ออกมาในแบบที่มนุษย์สามารถอ่านและทำความเข้าใจได้ง่าย
 	 - เนื่องจากชุดข้อมูลเห็ดเป็นตัวอักษรย่อทั้งหมด โมเดลนี้สามารถประมวลผลได้โดยตรงโดยไม่ต้องแปลงข้อมูลเป็นตัวเลข ซึ่งช่วยลดความเสี่ยงจากการคลาดเคลื่อนของข้อมูล
 	 - จากการทดสอบพบว่าโมเดลให้ค่า Performance แม่นยำถึง 100% สำหรับชุดข้อมูลนี้
+    
 	 ![Mushroom_Performance](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
  
  - **การเปรียบเทียบกับโมลเดลอื่น**

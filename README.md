@@ -62,8 +62,9 @@
  - ข้อมูลเชิงลึก
 	 - กลิ่น (Odor) เป็นตัวแปรที่สําคัญที่สุด โดยเห็นที่มีกลิ่น Almond หรือ Anise มีแนวโน้มที่จะกินได้ ส่วนเห็ดที่มีกลิ่นฉุนหรือเหม็นมักจะมีพิษ
 	 - สีของสปอร์ (Spore Print Color) เป็นอีกปัจจัยสําคัญที่ช่วยในการตัดสินใจ
-    
-![Mushroom_Result](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
+
+    ![Mushroom_Result](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
 
 **เครื่องมือที่ใช้:** RapidMiner
+
 **วิดิโอนําเสนอ:** [https://www.youtube.com/watch?v=tWEDENedrAg](https://www.youtube.com/watch?v=tWEDENedrAg)

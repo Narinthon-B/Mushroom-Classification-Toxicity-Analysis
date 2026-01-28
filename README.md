@@ -22,16 +22,22 @@
 	 - **Stalk-root:** ลักษณะโคนก้าน
 	 - **Spore-print-color:** สีของสปอร์
 
+
+
 **การจัดเตรียมข้อมูล (Data Preparation)**
 ขั้นตอนการทํา Data Cleaning
 
  1. สํารวจข้อมูลที่เกิด Missing Value จากการสํารวจพบว่ามข้อมูลที่มี Missing Value เฉพาะใน Attribute stalk-root เท่านั้น
+    
 ![Mushroom_MissingValue](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
- 2. เลือกใช้ Operator "Filter Examples" โดยตั้งเงื่อนไขเป็น `is not missing` เพื่อตัดแถวที่มีค่าว่างออกจากการวิเคราะห์
+ 3. เลือกใช้ Operator "Filter Examples" โดยตั้งเงื่อนไขเป็น `is not missing` เพื่อตัดแถวที่มีค่าว่างออกจากการวิเคราะห์
+    
 ![Mushroom_FilterExample](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
 
 > " เพราะข้อมูลเป็นประเภท Categorical การแทนค่าด้วยค่าเฉลี่ยไม่สามารถทําได้ จึงเลือกตัดข้อมูลแทน "
  - หลังจากทํา Data Cleaning แล้ว จะเหลือข้อมูลจํานวน 5,642 แถว และพร้อมที่จะนําไปสร้างโมเดลต่อไป
+
+
 
 **Algorithm ที่เลือกใช้**
 จากการเปรียบเทียบประสิทธิภาพของโมเดลต่างๆ ได้ตัดสินใจเลือกใช้ Decision Tree เนื่องจาก
@@ -47,11 +53,14 @@
 	 - **Linear Regression:** ไม่เหมาะสมเนื่องจากเป็นงานด้าน Classification ไม่ใช่การพยากรณ์ตัวเลข
 	 - **K-Means:** ไม่ถูกเลือกเนื่องจากเป็นการจัดกลุ่มแบบ Unsupervised Learning ซึ่งไม่สามารถระบุประเภทเห็ดพิษได้อย่างชัดเจน
 
+
+
 **ผลลัพธ์และการนําไปใช้งาน**
 
  - ข้อมูลเชิงลึก
 	 - กลิ่น (Odor) เป็นตัวแปรที่สําคัญที่สุด โดยเห็นที่มีกลิ่น Almond หรือ Anise มีแนวโน้มที่จะกินได้ ส่วนเห็ดที่มีกลิ่นฉุนหรือเหม็นมักจะมีพิษ
 	 - สีของสปอร์ (Spore Print Color) เป็นอีกปัจจัยสําคัญที่ช่วยในการตัดสินใจ
+    
 ![Mushroom_Result](https://drive.google.com/file/d/1INoBgq1eKCzqZCLKVQScowghxeg9ltoB/view?usp=drive_link)
 
 **เครื่องมือที่ใช้:** RapidMiner
